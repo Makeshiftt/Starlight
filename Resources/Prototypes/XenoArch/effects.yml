@@ -125,6 +125,8 @@
       weight: 4.0
     - id: XenoArtifactEffectCreationGasCarbonDioxide
       weight: 4.0
+    - id: XenoArtifactEdible #Starlight
+      weight: 10000.0 #Starlight
 
 - type: entityTable
   id: XenoArtifactEffectsHandheldOnlyTable
@@ -1295,6 +1297,45 @@
     intensitySlope: 2.5
     maxIntensity: 50
     repeatable: true
+# Starlight-start: new effects.
+- type: entity
+  id: XenoArtifactEdible
+  parent: BaseOneTimeXenoArtifactEffect
+  description: Becomes mildly edible
+  components:
+  - type: XAEApplyComponents
+    applyIfAlreadyHave: true
+    refreshOnReactivate: true
+    components:
+    - type: Edible
+    - type: SolutionContainerManager
+      solutions:
+        food:
+          maxVol: 100
+          reagents:
+          - ReagentId: Nutriment
+            Quantity: 99
+          - ReagentId: Artifexium # Makes each bite deal slight caustic (0.16), to balance the infinite food. 
+            Quantity: 1
+    - type: SolutionRegeneration
+      solution: food
+      generated:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 99
+        - ReagentId: Artifexium 
+          Quantity: 1
+    - type: FlavorProfile
+      flavors:
+        - strange
+        - spicy
+        - artifactglue
+    - type: Tag
+      tags:
+      - ClothMade
+      - Meat
+      - Raw
+# Starlight-end
 
 - type: entity
   id: XenoArtifactEffectCreationGasPlasma
