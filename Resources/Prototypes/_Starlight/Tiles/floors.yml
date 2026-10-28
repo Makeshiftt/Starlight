@@ -958,6 +958,21 @@
   weather: false
 
 - type: tile
+  id: FloorJungleGrassEdge
+  name: tiles-jungle-grass-edge
+  parent: FloorGrassJungle
+  edgeSpritePriority: 1
+  edgeSprites:
+    SouthEast: /Textures/_Starlight/Tiles/GrassTall/single_edge.png
+    NorthEast: /Textures/_Starlight/Tiles/GrassTall/single_edge.png
+    NorthWest: /Textures/_Starlight/Tiles/GrassTall/single_edge.png
+    SouthWest: /Textures/_Starlight/Tiles/GrassTall/single_edge.png
+    South: /Textures/_Starlight/Tiles/GrassTall/double_edge.png
+    East: /Textures/_Starlight/Tiles/GrassTall/double_edge.png
+    North: /Textures/_Starlight/Tiles/GrassTall/double_edge.png
+    West: /Textures/_Starlight/Tiles/GrassTall/double_edge.png
+
+- type: tile
   parent: FloorGrassDark
   id: FloorDarkAstroGrassEdge
   name: tiles-dark-astro-grass
@@ -978,6 +993,21 @@
   weather: false
 
 - type: tile
+  parent: FloorGrassDark
+  id: FloorDarkGrassEdge
+  name: tiles-dark-grass-edge
+  edgeSpritePriority: 1
+  edgeSprites:
+    SouthEast: /Textures/_Starlight/Tiles/GrassDark/single_edge.png
+    NorthEast: /Textures/_Starlight/Tiles/GrassDark/single_edge.png
+    NorthWest: /Textures/_Starlight/Tiles/GrassDark/single_edge.png
+    SouthWest: /Textures/_Starlight/Tiles/GrassDark/single_edge.png
+    South: /Textures/_Starlight/Tiles/GrassDark/double_edge.png
+    East: /Textures/_Starlight/Tiles/GrassDark/double_edge.png
+    North: /Textures/_Starlight/Tiles/GrassDark/double_edge.png
+    West: /Textures/_Starlight/Tiles/GrassDark/double_edge.png
+
+- type: tile
   parent: FloorGrassLight
   id: FloorLightAstroGrassEdge
   name: tiles-light-astro-grass
@@ -996,6 +1026,21 @@
   deconstructTools: [ Cutting ]
   itemDrop: FloorTileItemLightAstroGrass
   weather: false
+
+- type: tile
+  parent: FloorGrassLight
+  id: FloorLightGrassEdge
+  name: tiles-light-grass-edge
+  edgeSpritePriority: 1
+  edgeSprites:
+    SouthEast: /Textures/_Starlight/Tiles/GrassLight/single_edge.png
+    NorthEast: /Textures/_Starlight/Tiles/GrassLight/single_edge.png
+    NorthWest: /Textures/_Starlight/Tiles/GrassLight/single_edge.png
+    SouthWest: /Textures/_Starlight/Tiles/GrassLight/single_edge.png
+    South: /Textures/_Starlight/Tiles/GrassLight/double_edge.png
+    East: /Textures/_Starlight/Tiles/GrassLight/double_edge.png
+    North: /Textures/_Starlight/Tiles/GrassLight/double_edge.png
+    West: /Textures/_Starlight/Tiles/GrassLight/double_edge.png
 
 - type: tile
   id: FloorGrassClassic
